@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:background="@drawable/grey_rect"
+    android:focusable="true"
+    android:padding="15dp"
+    app:cardCornerRadius="10dp">
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/light_gray"
+            android:textSize="18sp"
+            tools:text="Char name" />
+
+        <View
+            android:background="@drawable/ic_arrow_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+
+    </RelativeLayout>

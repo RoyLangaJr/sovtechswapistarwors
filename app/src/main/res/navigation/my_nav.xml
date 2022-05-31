@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/charactersFragment">
+
+
+    <fragment
+        android:id="@+id/charactersFragment"
+        android:name="com.juniorlanga.swapistarwars.ui.CharactersFragment"
+        android:label="All Charecters"
+        tools:layout="@layout/fragment_characters">
+        <action
+            android:id="@+id/action_charectersFragment_to_charectersDetailsFragment"
+            app:destination="@id/charactersDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/charactersDetailsFragment"
+        android:name="com.juniorlanga.swapistarwars.ui.CharactersDetailsFragment"
+        android:label="Character Details"
+        tools:layout="@layout/fragment_characters_details">
+    <argument
+        android:name="characterDetails"
+        app:argType="com.juniorlanga.swapistarwars.models.Character" />
+    </fragment>
+</navigation>
